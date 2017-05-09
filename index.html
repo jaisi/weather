@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wither the Weather</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+</head>
+<body>
+	<div id="container">
+		<div class="jumbotron"><h2>Wither the Weather!!!!</h2></div>
+		<label>Enter your Zipcode:</label><input type="text" class="form-control" id="zipcode">
+	    <label>Select the type of weather forecast you need from the dropdown:</label>
+	    <select class="form-control" id="sel-weather">
+	      <option value="none">None</option>
+	      <option value="current">Current weather data</option>
+	      <option value="five">5 day / 3 hour forecast</option>
+	      <option value="sixteen">16 day / daily forecast</option>
+	    </select>
+	    <br><br>
+	   
+			<div id="output"> </div>
+	</div>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/display.js"></script>
+	<script type="text/javascript" src="js/DOMhandler.js"></script>
+</body>
+</html>
